@@ -161,6 +161,11 @@ h6 {
     ul.banner-social-buttons > li:last-child {
         margin-bottom: 0;
     }
+    .img-responsive{
+        width:50%;
+        height:50%;
+        margin: auto;
+    }
 }
 
 footer {
