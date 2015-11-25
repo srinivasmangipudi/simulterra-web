@@ -44,6 +44,10 @@ h6 {
     position: relative;
     padding-top: 20%;
     padding-bottom: 20%;
+    color: lavenderblush;
+}
+.lavenderblush {
+  color: lavenderblush;  
 }
 
 .intro-message > h1 {
