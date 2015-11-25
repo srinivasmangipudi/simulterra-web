@@ -23,11 +23,12 @@ h6 {
 
 .topnav {
     font-size: 14px;
+    font-weight: 300;
 }
 
 .lead {
     font-size: 18px;
-    font-weight: 200;
+    font-weight: 300;
 }
 
 .intro-header {
@@ -59,7 +60,11 @@ h6 {
 
 .intro-message > h3 {
 }
-
+.mysketch{
+  width: 50%;
+  height: 50%;
+  margin: auto;
+}
 @media(max-width:767px) {
     .intro-message {
         padding-bottom: 15%;
@@ -133,7 +138,7 @@ h6 {
     float: right;
     margin-top: 0;
 }
-.img-responsive{
+.img-responsive-ads{
     width:50%;
     height:50%;
 }

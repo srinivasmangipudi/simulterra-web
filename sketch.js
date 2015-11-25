@@ -1,18 +1,22 @@
 var myCanvas;
 function setup() {
-  var myCanvas = createCanvas(displayWidth, displayHeight);
+  var myCanvas = createCanvas(windowWidth, windowHeight, WEBGL);
   myCanvas.parent('mysketch');
 }
 
 
 function draw() {
-  background(237, 34, 93);
-  fill(0);
+background(255);
 
-  //move the canvas to the horizontal mouse position
-  //relative to the window
-  myCanvas.position(winMouseX+1, windowHeight/2);
+ var locY = (mouseY / height - 0.5) * (-2);
+ var locX = (mouseX / width - 0.5) * 2;
 
-  //the y of the square is relative to the canvas
-  rect(20,mouseY,60,60);
+ ambientLight(50);
+ directionalLight(200, 0, 0, 0.25, 0.25, 0.25);
+ pointLight(0, 0, 200, locX, locY, 0);
+ pointLight(200, 200, 0, -locX, -locY, 0);
+
+ translate(250, 0, 0);
+ ambientMaterial(250);
+ sphere(120, 64);
 }
